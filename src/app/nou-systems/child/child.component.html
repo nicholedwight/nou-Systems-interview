@@ -1,2 +1,1 @@
-<button (click)="consoleEvent.emit('Many hellos, nou Systems, Inc. team!')">Click Me!</button>
-<button appDebounceClick (debounceClick)="consoleEvent.emit('Hello, nou Systems, Inc. team!')" [debounceTime]="2000">Debounced Click</button>
+<button #debouncedBtn appDebounceClick (debounceClick)="consoleEvent.emit('Hello, nou Systems, Inc. team!')" [debounceTime]="2000" (click)="updateText('<span>Please wait...</span>', '<span>Debounced Click</span>')"><span>Debounced Click</span></button>
