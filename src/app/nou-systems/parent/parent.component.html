@@ -1,2 +1,4 @@
-<p *ngIf="clicked">Check your console, there should be a message!</p>
-<app-child (consoleEvent)="consoleMessage($event)"></app-child>
+<article class="btn-container">
+    <app-child (consoleEvent)="consoleMessage($event)"></app-child>
+</article>
+<p class="whisper" *ngIf="clicked">Pssst! Check your console, there should be a message!</p>

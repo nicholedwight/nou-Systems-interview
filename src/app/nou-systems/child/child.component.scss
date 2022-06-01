@@ -1,0 +1,40 @@
+button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 65px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    border-color: transparent;
+    border-radius: 3px;
+    background: transparent;
+    color: #000;
+    font-size: 1.25em;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 28px;
+        background: var(--btn-bg);
+        width: 56px;
+        height: 56px;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &::before {
+            width: 100%;
+        }
+    }
+
+    span {
+        position: relative;
+    }
+}
