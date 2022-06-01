@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NouSystemsModule } from './nou-systems/nou-systems.module';
 
 @Component({
   selector: 'app-root',
