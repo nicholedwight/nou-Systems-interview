@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
   clicked?: boolean;
-  consoleMessage(message: Event): void {
+  public consoleMessage(message: Event): void {
     this.clicked = true;
     console.log(message);
   };
